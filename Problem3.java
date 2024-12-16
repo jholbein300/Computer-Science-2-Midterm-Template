@@ -8,20 +8,17 @@
 public class Problem3 {
     public static void main(String[] args) {
 
-        // Prompt for inputs
         double mealPrice = readLine.readDouble("Enter the meal price: ");
 
         int tipPercentage = readLine.readInt("Enter the tip percentage: ");
 
         int taxRate = readLine.readInt("Enter the tax rate: ");
-        // Calculate tip and tax amounts
-        double tip = mealPrice * (tipPercentage / 100); // Bug is here
-        double tax = mealPrice * (taxRate / 100);       // And here
 
-        // Calculate total cost
+        double tip = mealPrice * (tipPercentage / 100);
+        double tax = mealPrice * (taxRate / 100);
+
         double totalCost = mealPrice + tip + tax;
 
-        // Print the total cost rounded to two decimal places
         System.out.printf("The total cost of your meal is: $%.2f%n", totalCost);
 
     }

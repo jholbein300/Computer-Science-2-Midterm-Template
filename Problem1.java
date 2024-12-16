@@ -9,7 +9,7 @@
 
 public class Problem1
 {
-    public void run()
+    public static void main(String[] args) 
     {
 
     }

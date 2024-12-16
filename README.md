@@ -1,5 +1,11 @@
 # Computer-Science-2-Midterm-Template
 
+Before doing anything, go to the terminal and run this command:
+
+javac readLine.java
+
+If you don't, then you wont be able to use readLine
+
 
 IMPORTANT!!!!!!!!
 When you call readLine, the syntax is slightly different here than in codespaces

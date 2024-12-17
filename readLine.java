@@ -19,6 +19,7 @@ public class readLine {
         int value = scanner.nextInt();
         // Avoid calling scanner.nextLine() unnecessarily
         return value;
+        }
 
     public static double readDouble(String prompt) {
         System.out.print(prompt);
@@ -28,7 +29,6 @@ public class readLine {
             scanner.next();
         }
         double value = scanner.nextDouble();
-        scanner.nextLine();
         return value;
     }
 

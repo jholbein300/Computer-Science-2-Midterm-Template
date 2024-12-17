@@ -9,17 +9,16 @@ public class readLine {
         return scanner.nextLine();
     }
 
-    public static int readInt(String prompt) {
+        public static int readInt(String prompt) {
         System.out.print(prompt);
         while (!scanner.hasNextInt()) { // checks if the next thing is an integer
-            System.out.println("input isnt a int");
+            System.out.println("Input isn't an integer.");
             System.out.print(prompt);
-            scanner.next(); 
+            scanner.next(); // Discard invalid input
         }
         int value = scanner.nextInt();
-        scanner.nextLine();
+        // Avoid calling scanner.nextLine() unnecessarily
         return value;
-    }
 
     public static double readDouble(String prompt) {
         System.out.print(prompt);
